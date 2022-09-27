@@ -1,7 +1,7 @@
 #相对路径转绝对路径
 from cProfile import label
 from email.mime import image
-import numpy as np
+
 import os
 import json
 from pathlib import Path
