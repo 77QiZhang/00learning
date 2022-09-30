@@ -1,5 +1,6 @@
 import json
 import os
+###
 def get_nnunet_case_files(nnUNet , out_file_path,dataset = None):
     with open(nnUNet) as json_file:
         nnUNet_data = json.load(json_file)
@@ -9,7 +10,7 @@ def get_nnunet_case_files(nnUNet , out_file_path,dataset = None):
     num = len(nnUNet_data["training"])
     dataset = []
     i = 0
-    
+    a = 1
     for i in range(num):
         case_data = {}
         if "image" not in training_list[i]:
